@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whey Protein</title>
+    <style>
+        .container{
+            /* border: 3px solid red; */
+        }
+        header{
+            display: flex;
+            flex-direction: column;
+            color:white;
+            background-color: #232a37;
+        }
+        .name{
+            font-family: 'Bebas Neue', cursive;
+            font-size: xx-large;
+            margin-left: 40px;
+            /* position: absolute;
+            top: 15px;
+            left: 40px */
+        }
+        navbar{
+            position: absolute;
+            top: 25px;
+            left: 400px
+        }
+        .sideButtons{
+            position: absolute;
+            top:10px;
+            right: 50px;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+        }
+        a{
+            text-decoration: none;
+            color:white
+        }
+        .item1{
+            margin-right: 20px;
+        }
+        .menu{
+            margin-top: 40px;
+            justify-content:space-around;
+            font-weight: bold;
+            /* align-items: center; */
+        }
+
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="name">Nutrabay</div>
+        <navbar>
+            This is Navbar
+        </navbar>
+        <div class="sideButtons">
+            <ul>
+                <li class="item1"><a href="#">LOGIN/REGISTER</a></li>
+                <li class="item1"><a href="#">CART</a></li>
+            </ul>
+        </div>
+        <ul class='menu'>
+            <li class="item2" id="service-1">Brands</li>
+            <li class="item2" id="service-2">Sports Nutrition</li>
+            <li class="item2" id="service-3">Weight Loss</li>
+            <li class="item2" id="service-4">Wellness</li>
+            <li class="item2" id="service-5">Proteins</li>
+            <li class="item2" id="service-6">Crazy Deals</li>
+        </ul>
+      </header>
+    </div>
+  </body>
+</html>
