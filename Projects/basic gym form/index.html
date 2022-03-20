@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CrossFit Gym</title>
+    <style>
+        body{
+            color: white;
+            background-image: url(images/back-img.jpg);
+            background-size: 1440px 720px;
+        }
+        img{
+            width:1440px;
+            height: 720px;
+        }
+      .left {
+        /* border: 2px solid red; */
+        width: 100px;
+        top: 14px;
+        left: 10px;
+        text-align: center;
+      }
+      .left h4{
+        margin-top: 5px;
+      }
+      .mid {
+        /* border: 2px solid red; */
+        width: 400px;
+        position: absolute;
+        left: 450px;
+        top: 10px;
+      }
+      .mid li{
+        display: inline-block;
+        margin: 10px 15px;
+      }
+      .mid a{
+          text-decoration: none;
+          color: white;
+      }
+      .right {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+      button{
+          margin:25px 10px;
+          cursor:pointer;
+          border-radius: 8px;
+      }
+      button:hover{
+          background-color: white;
+      }
+      .logo{
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;
+      }
+      .formBody{
+          /* border: 3px solid red; */
+      }
+      .formBody input , .formBody button{
+          display: block;
+          width: 300px;
+          margin:10px auto;
+          padding: 5px;
+      }
+      .formBody h4{
+          text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <navbar class="navbar">
+      <div class="left">
+          <img src="images/logo.png" class="logo" alt="">
+          <h4>CrossFit Gym</h4>
+      </div>
+      <div class="mid">
+          <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">Contact</a></li>
+          </ul>
+
+      </div>
+      <div class="right">
+          <button>Login</button>
+          <button>Contact us</button>
+      </div>
+    </navbar>
+    <div class="formBody">
+        <h4>
+            Enter your info here
+        </h4>
+        <form action="onSubmit">
+            <input type="text" placeholder="Name" required>
+            <input type="number" placeholder="Age">
+            <input type="text" placeholder="Contact">
+            <input type="number" placeholder="Weight">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+  </body>
+</html>
